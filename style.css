@@ -141,3 +141,14 @@ h3{color:var(--navy);font-size:1.1rem;margin:0 0 .35rem}
  .form .btn{width:auto}
 }
 @media(min-width:1000px){.formwrap{grid-template-columns:1fr 2fr;align-items:start}}
+/* v5: language switch + badge */
+.hdr-right{display:flex;align-items:center;gap:.5rem}
+.lang-switch{display:flex;align-items:center;gap:.35rem;font-size:.8rem;font-weight:700;color:var(--muted)}
+.lang-switch a{color:var(--navy);text-decoration:none;padding:.35rem .25rem}
+.lang-switch a:hover{text-decoration:underline}
+.lang-switch [aria-current]{color:var(--navy);background:#e8eef7;border-radius:3px;padding:.15rem .4rem}
+.nav .lang-switch{display:none}
+.es-badge{display:inline-block;margin-top:1rem;color:#fff;font-weight:700;font-size:.9rem;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}.hero-cta .es-badge{margin-top:0}
+@media(min-width:1100px){.hdr-right .lang-switch{display:none}.nav .lang-switch{display:flex}.nav ul{gap:1rem}}
+.nav.open .lang-switch{display:flex;margin-top:1rem;font-size:.95rem}
